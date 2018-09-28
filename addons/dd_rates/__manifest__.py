@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','bi_manual_currency_exchange_rate'],
 
     # always loaded
     'data': [
