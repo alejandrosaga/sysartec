@@ -1,19 +1,18 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="dd_rates.list">
+
+    <record model="ir.ui.view" id="dd_view_order_form">
       <field name="name">dd_rates list</field>
-      <field name="model">dd_rates.dd_rates</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+        <xpath expr="//field[@name='sale_manual_currency_rate_active']" position="after">
+          <field name="x_exchange_rate"/>
+        </xpath>
       </field>
     </record>
-    -->
+
 
     <!-- actions opening views on models -->
     <!--

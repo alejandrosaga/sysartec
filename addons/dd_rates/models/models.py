@@ -2,7 +2,9 @@
 
 from odoo import models, fields, api
 
-# class dd_rates(models.Model):
+class dd_rates(models.Model):
+    _inherit='sale.order'
+    x_exchange_rate = fields.float(string='Exchange rate')
 #     _name = 'dd_rates.dd_rates'
 
 #     name = fields.Char()
