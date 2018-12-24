@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="sale_order_supplier_form">
+        <field name="name">sale_order_supplier.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="before">
+                <field name="vendor_id"/>
+                <field name="purchase_currency_id"/>
+                <field name="cost_price"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form/group" position="inside">
+                <group string="Vendor Information">
+                    <field name="vendor_id"/>
+                    <field name="purchase_currency_id"/>
+                    <field name="cost_price"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
