@@ -12,6 +12,7 @@
     'depends': [
         'sale_management',
         'purchase',
+        'sale_margin',
     ],
     'data': [
         'views/sale_order_line.xml',
