@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_custom_sysartec" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@name='payment_term']" position="after">
+            <div name="currency" t-if="doc.pricelist_id" class="col-xs-3">
+                <strong>Currency:</strong>
+                <p t-field="doc.pricelist_id.currency_id"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
