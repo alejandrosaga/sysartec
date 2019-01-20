@@ -18,7 +18,7 @@ class SaleOrderLine(models.Model):
 
     @api.depends(
         'product_id', 'purchase_price', 'product_uom_qty', 'price_unit',
-        'price_subtotal')
+        'price_subtotal', 'order_id.pricelist_id', 'purchase_currency_id')
     def _product_margin(self):
         for line in self:
             currency = line.order_id.pricelist_id.currency_id
@@ -29,7 +29,9 @@ class SaleOrderLine(models.Model):
             line.margin = currency.round(
                 line.price_subtotal - (price * line.product_uom_qty))
 
-    @api.onchange('desired_margin', 'purchase_price')
+    @api.onchange(
+        'desired_margin', 'purchase_price', 'order_id.pricelist_id',
+        'purchase_currency_id')
     def _onchange_desired_margin(self):
         desired_margin = self.desired_margin / 100
         if desired_margin >= 1.0:
