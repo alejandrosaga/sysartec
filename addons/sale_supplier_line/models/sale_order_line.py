@@ -60,9 +60,12 @@ class SaleOrderLine(models.Model):
         if 'purchase_currency_id' in values:
             currency_id = values['purchase_currency_id']
         suppinfo = product.seller_ids.with_context(
-            vendor_id=vendor_id, sale_order_id=self.order_id.id).filtered(
+            vendor_id=vendor_id,
+            sale_order_id=self.order_id.id,
+            currency_id=self.purchase_currency_id.id).filtered(
                 lambda l: l.name.id == l._context['vendor_id'] and
-                l.sale_order_id.id == l._context['sale_order_id'])
+                l.sale_order_id.id == l._context['sale_order_id'] and
+                l.currency_id.id == l._context['currency_id'])
         vals = {
             'name': vendor_id,
             'product_id': product.id,
