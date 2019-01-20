@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-28 17:58+0000\n"
-"PO-Revision-Date: 2018-12-28 17:58+0000\n"
+"POT-Creation-Date: 2019-01-20 14:49+0000\n"
+"PO-Revision-Date: 2019-01-20 14:49+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,9 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sale_supplier_line
-#: model:ir.model.fields,field_description:sale_supplier_line.field_sale_order_line_cost_price
-msgid "Cost Price"
-msgstr "Precio de costo"
+#: model:ir.model.fields,field_description:sale_supplier_line.field_sale_order_line_desired_margin
+msgid "Desired Margin"
+msgstr "Márgen Deseado"
 
 #. module: sale_supplier_line
 #: model:ir.model,name:sale_supplier_line.model_product_supplierinfo
@@ -54,4 +54,16 @@ msgstr "Proveedor"
 #: model:ir.ui.view,arch_db:sale_supplier_line.sale_order_supplier_form
 msgid "Vendor Information"
 msgstr "Información del proveedor"
+
+#. module: sale_supplier_line
+#: code:addons/sale_supplier_line/models/sale_order_line.py:35
+#, python-format
+msgid "You cannot set more margin than 100%"
+msgstr "No puedes definir un margen superior al 100%"
+
+#. module: sale_supplier_line
+#: code:addons/sale_supplier_line/models/sale_order_line.py:37
+#, python-format
+msgid "You cannot set negative margin"
+msgstr "No puedes definir un margen negativo"
 

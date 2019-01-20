@@ -1,7 +1,8 @@
 # Copyright 2018, Jarsa Sistemas, S.A. de C.V.
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
+from odoo.exceptions import Warning
 
 
 class SaleOrderLine(models.Model):
@@ -12,6 +13,7 @@ class SaleOrderLine(models.Model):
         domain="[('supplier', '=', True),('company_type', '=', 'company')]")
     purchase_currency_id = fields.Many2one(
         'res.currency', string='Purchase Currency')
+    desired_margin = fields.Float()
 
     @api.depends(
         'product_id', 'purchase_price', 'product_uom_qty', 'price_unit',
@@ -20,11 +22,25 @@ class SaleOrderLine(models.Model):
         for line in self:
             currency = line.order_id.pricelist_id.currency_id
             price = line.purchase_price
-            from_cur = line.purchase_currency_id
-            if from_cur != currency:
-                price = from_cur.compute(price, currency, round=False)
+            line_currency = line.purchase_currency_id
+            if line_currency != currency:
+                price = line_currency.compute(price, currency, round=False)
             line.margin = currency.round(
                 line.price_subtotal - (price * line.product_uom_qty))
+
+    @api.onchange('desired_margin', 'purchase_price')
+    def _onchange_desired_margin(self):
+        desired_margin = self.desired_margin / 100
+        if desired_margin >= 1.0:
+            raise Warning(_('You cannot set more margin than 100%'))
+        if desired_margin < 0:
+            raise Warning(_('You cannot set negative margin'))
+        price = self.purchase_price
+        currency = self.order_id.pricelist_id.currency_id
+        line_currency = self.purchase_currency_id
+        if currency != line_currency:
+            price = line_currency.compute(price, currency, round=False)
+        self.price_unit = currency.round(price / (1 - desired_margin))
 
     @api.multi
     def check_lines(self, values):
