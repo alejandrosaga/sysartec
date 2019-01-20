@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="sale_order_custom_sysartec_view">
+        <field name="name">sale_order_custom_sysartec_view.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='analytic_account_id']" position="replace"/>
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="analytic_account_id" context="{'default_partner_id':partner_invoice_id, 'default_name':name}" attrs="{'readonly': ['|',('analytic_account_id','!=',False),('invoice_count','!=',0),('state','=','sale')]}" groups="analytic.group_analytic_accounting"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
