@@ -10,10 +10,11 @@ class SaleOrderLine(models.Model):
 
     vendor_id = fields.Many2one(
         'res.partner',
-        domain="[('supplier', '=', True),('company_type', '=', 'company')]")
+        domain="[('supplier', '=', True),('is_company', '=', True)]",
+        required=True)
     purchase_currency_id = fields.Many2one(
-        'res.currency', string='Purchase Currency')
-    desired_margin = fields.Float()
+        'res.currency', string='Purchase Currency', required=True,)
+    desired_margin = fields.Float(required=True)
 
     @api.depends(
         'product_id', 'purchase_price', 'product_uom_qty', 'price_unit',
