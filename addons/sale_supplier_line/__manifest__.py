@@ -11,7 +11,7 @@
     'license': 'AGPL-3',
     'depends': [
         'sale_margin',
-        'purchase',
+        'purchase_supplierinfo_currency',
     ],
     'data': [
         'views/sale_order_line.xml',

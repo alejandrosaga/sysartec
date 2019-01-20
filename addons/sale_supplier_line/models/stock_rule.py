@@ -14,7 +14,13 @@ class ProcurementRule(models.Model):
         searching it taking in consideration the origin sale order"""
         res = super()._make_po_select_supplier(
             values, suppliers)
-        supplier = suppliers.with_context(values=values).filtered(
-            lambda r: r.sale_order_id == r._context.get(
-                'values').get('group_id').sale_id and r.sale_order_id) or res
+        currency_id = values.get(
+            'move_dest_ids')[0].sale_line_id.purchase_currency_id.id
+        sale_id = values.get('group_id').sale_id.id
+        supplier = suppliers.with_context(
+            sale_id=sale_id, currency_id=currency_id).filtered(
+            lambda r: r.sale_order_id and r.sale_order_id.id == r._context.get(
+                'sale_id') and r.currency_id.id == r._context.get(
+                'currency_id')) or res
+        values['supplier'] = supplier
         return supplier
