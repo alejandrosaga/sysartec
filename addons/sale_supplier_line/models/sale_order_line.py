@@ -13,6 +13,19 @@ class SaleOrderLine(models.Model):
     purchase_currency_id = fields.Many2one(
         'res.currency', string='Purchase Currency')
 
+    @api.depends(
+        'product_id', 'purchase_price', 'product_uom_qty', 'price_unit',
+        'price_subtotal')
+    def _product_margin(self):
+        for line in self:
+            currency = line.order_id.pricelist_id.currency_id
+            price = line.purchase_price
+            from_cur = line.purchase_currency_id
+            if from_cur != currency:
+                price = from_cur.compute(price, currency, round=False)
+            line.margin = currency.round(
+                line.price_subtotal - (price * line.product_uom_qty))
+
     @api.multi
     def check_lines(self, values):
         self.ensure_one()
