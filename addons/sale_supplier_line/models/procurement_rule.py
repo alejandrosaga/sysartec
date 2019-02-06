@@ -14,8 +14,7 @@ class ProcurementRule(models.Model):
         searching it taking in consideration the origin sale order"""
         res = super()._make_po_select_supplier(
             values, suppliers)
-        sale_line = self.env['sale.order.line'].browse(
-            values.get('sale_line_id', False))
+        sale_line = values['move_dest_ids'].sale_line_id
         currency_id = sale_line.purchase_currency_id.id
         sale_id = sale_line.order_id.id
         supplier = suppliers.with_context(
