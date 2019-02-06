@@ -15,6 +15,7 @@ class SaleOrderLine(models.Model):
     purchase_currency_id = fields.Many2one(
         'res.currency', string='Purchase Currency', required=True,)
     desired_margin = fields.Float(required=True)
+    list_price = fields.Float(string='List price', required=True)
 
     @api.depends(
         'product_id', 'purchase_price', 'product_uom_qty', 'price_unit',

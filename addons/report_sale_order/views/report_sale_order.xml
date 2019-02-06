@@ -7,5 +7,13 @@
                 <p t-field="doc.pricelist_id.currency_id"/>
             </div>
         </xpath>
+        <xpath expr="//t[@t-foreach='doc.order_lines_layouted()']/table/thead/tr/th[2]" position="after">
+            <th class="text-right">List Price</th>
+        </xpath>
+        <xpath expr="//t[@t-as='l']/tr/td[2]" position="after">
+            <td class="text-right">
+                <span t-field="l.list_price"/>
+            </td>
+        </xpath>
     </template>
 </odoo>
