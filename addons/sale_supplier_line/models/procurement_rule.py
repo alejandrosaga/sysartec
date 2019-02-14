@@ -19,15 +19,15 @@ class ProcurementRule(models.Model):
                 values['sale_line_id'])
         else:
             sale_line = values['move_dest_ids'].sale_line_id
-        currency_id = sale_line.purchase_currency_id.id
-        sale_id = sale_line.order_id.id
-        vendor_id = sale_line.vendor_id.id
-        supplier = suppliers.with_context(
-            sale_id=sale_id, currency_id=currency_id,
-            vendor_id=vendor_id).filtered(
-            lambda r: r.sale_order_id and r.sale_order_id.id == r._context.get(
-                'sale_id') and r.currency_id.id == r._context.get(
-                'currency_id' and r.name.id == r._context.get('vendor_id'))
-            ) or res
+        context = {
+            'sale_id': sale_line.order_id.id,
+            'currency_id': sale_line.purchase_currency_id.id,
+            'vendor_id': sale_line.vendor_id.id,
+        }
+        supplier = suppliers.with_context(context).filtered(
+            lambda r: r.sale_order_id.id == r._context[
+                'sale_id'] and r.currency_id.id == r._context[
+                'currency_id'] and r.name.id == r._context['vendor_id']
+        ) or res
         values['supplier'] = supplier
         return supplier
