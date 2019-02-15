@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_invoice_sysartec" model="report.paperformat">
+        <field name="name">Invoice sysartec</field>
+        <field name="default" eval="True" />
+        <field name="format">Letter</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">8</field>
+        <field name="margin_right">8</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">2</field>
+        <field name="dpi">90</field>
+    </record>
+    <record id="account.account_invoices" model="ir.actions.report">
+        <field name="paperformat_id" ref="report_invoice_sysartec.paperformat_invoice_sysartec"/>
+    </record>
+    <data noupdate="1">
+        <delete model="ir.actions.report" search="[('id', '=', ref('account.account_invoices_without_payment'))]"/>
+    </data>
+</odoo>
