@@ -72,6 +72,7 @@ class SaleOrderLine(models.Model):
             'price': purchase_price,
             'currency_id': currency_id,
             'sale_order_id': self.order_id.id,
+            'product_name': self.name,
             'delay': 1.0,
             'min_qty': 1.0,
         }
