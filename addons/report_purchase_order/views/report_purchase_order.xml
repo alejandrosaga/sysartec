@@ -5,20 +5,20 @@
             <div class="page">
                 <div class="row">
                     <div class="col-xs-6">
-                        <img width="220" height="120" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/><br/>
+                        <img width="250" height="120" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/><br/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <table class="col-xs-10" style="border: 1px solid;">
+                        <table class="col-xs-12" style="border: 1px solid;">
                             <tr>
                                 <th style="text-align:center; background-color:#2d3b4a; color:white;" colspan="2">Partner data</th>
                             </tr>
-                            <tr style="font-size:11px;">
+                            <tr style="font-size:12px;">
                                 <td><strong>Name:</strong></td>
                                 <td><span t-field="o.partner_id"/></td>
                             </tr>
-                            <tr style="font-size:11px;">
+                            <tr style="font-size:12px;">
                                 <td>
                                     <strong>Fiscal Address:</strong>
                                 </td>
@@ -33,48 +33,48 @@
                                     <span t-field="o.partner_id.zip"/>
                                 </td>
                             </tr>
-                            <tr style="font-size:11px;">
+                            <tr style="font-size:12px;">
                                 <td><strong>VAT:</strong></td>
                                 <td><span t-esc="o.partner_id.vat"/></td>
                                 <br/>
                             </tr>
                         </table>                        
                     </div>
-                    <div class="col-xs-6">   
-                        <table class="col-xs-8" style="margin-left:69px; border: 1px solid; text-align:center;">
+                    <div class="col-xs-6" style="margin-top:20px;">   
+                        <table class="col-xs-10 pull-right" style="border: 1px solid; text-align:center;">
                             <tr>
                                 <th style="text-align:center;background-color:#2d3b4a; color:white;">Purchase Order</th>
                             </tr>
                             <tr>
-                                <td style="font-size:11px;"><span t-esc="o.name"/></td>
+                                <td style="font-size:12px;"><span t-esc="o.name"/></td>
                             </tr>
                         </table>
-                        <table class="col-xs-8" style="margin-left:69px; border: 1px solid; text-align:center;">
+                        <table class="col-xs-10 pull-right" style="border: 1px solid; text-align:center;">
                             <tr>
                                 <th style="text-align:center;background-color:#2d3b4a; color:white;">Emission date</th>
                             </tr>
                             <tr>
-                                <td style="font-size:11px;"><span t-esc="o.date_order"/></td>
+                                <td style="font-size:12px;"><span t-esc="o.date_order"/></td>
                             </tr>
                         </table>
-                        <table class="col-xs-8" style="margin-left:69px; border: 1px solid;text-align:center;">
+                        <table class="col-xs-10 pull-right" style="border: 1px solid;text-align:center;">
                             <tr>
                                 <th style="text-align:center;background-color:#2d3b4a; color:white;">Currency</th>
                             </tr>
                             <tr>
-                                <td style="font-size:11px;"><span t-esc="o.currency_id.name"/></td>
+                                <td style="font-size:12px;"><span t-esc="o.currency_id.name"/></td>
                             </tr>
                         </table>                        
                     </div>
                 </div>
-                <div class="row" style="margin-top:20px;">
+                <div class="row" style="margin-top:15px;">
                     <div class="col-xs-6">
-                        <table class="col-xs-10" style="border: 1px solid;" name="invoice_address">
+                        <table class="col-xs-12" style="border: 1px solid;" name="invoice_address">
                             <tr>
                                 <th style="text-align:center; background-color:#2d3b4a; color:white;">Invoicing address</th>
                             </tr>
-                            <tr>
-                                <td style="border: 1px solid;font-size:11px;">
+                            <tr height="86">
+                                <td style="border: 1px solid;font-size:12px;">
                                     <strong><span t-esc="o.company_id.name"/><br/>
                                     <span t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.company_id.vat"/></strong><br/>
                                     <span t-field="o.company_id.street_name"/><br/>
@@ -89,12 +89,12 @@
                         </table>
                     </div>
                     <div class="col-xs-6">
-                        <table class="col-xs-10" style="border: 1px solid;">
+                        <table class="col-xs-10 pull-right" style="border: 1px solid;">
                             <tr>
-                                <th style="text-align:center; background-color:#2d3b4a; color:white;" colspan="2">Shipping address</th>
+                                <th style="text-align:center; background-color:#2d3b4a; color:white;">Shipping address</th>
                             </tr>
-                            <tr>
-                                <td style="text-align:left;font-size:11px;">
+                            <tr height="86">
+                                <td style="text-align:left;font-size:12px;">
                                     <div style="margin-left:20px;">
                                         <span t-if="o.dest_address_id" t-field="o.dest_address_id"
                                             t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
@@ -103,12 +103,6 @@
                                                 t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
                                         </div>                                        
                                     </div>
-                                </td>
-                                <td style="text-align:left;font-size:11px;">
-                                    <span t-field="o.partner_id"
-                                            t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
-                                            <p t-if="o.partner_id.vat"><t t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.partner_id.vat"/></p>
-                                            <br/>
                                 </td>
                             </tr>
                         </table>
@@ -128,7 +122,8 @@
                     <tbody>
                         <tr t-foreach="o.order_line" t-as="line">
                             <td>
-                                <span t-field="line.product_id.l10n_mx_edi_code_sat_id.code"/>
+                                <span t-if="line.product_id.l10n_mx_edi_code_sat_id.code" t-field="line.product_id.l10n_mx_edi_code_sat_id.code"/>
+                                <span t-if="not line.product_id.l10n_mx_edi_code_sat_id.code" t-field="line.product_id"/>
                             </td>
                             <td>
                                 <span t-field="line.name"/>
@@ -184,6 +179,12 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col-xs-6">
+                        <span>Observations:</span>
+                        <span t-field="o.notes"/>
                     </div>
                 </div>
             </div>
