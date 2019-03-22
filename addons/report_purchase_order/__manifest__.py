@@ -15,5 +15,6 @@
     'data': [
         'views/report_purchase_order.xml',
         'views/report_paperformat.xml',
+        'views/purchase_order_view.xml',
     ],
 }

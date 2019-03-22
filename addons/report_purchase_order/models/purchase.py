@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import logging
-from odoo import models
+from odoo import fields, models
 
 _logger = logging.getLogger(__name__)
 try:
@@ -14,6 +14,7 @@ except ImportError as err:
 class PurchaseOrderLine(models.Model):
     _inherit = 'purchase.order'
 
+    customer_id = fields.Many2one('res.partner', 'Customer')
 
     def _amount_to_text(self, amount, currency, partner_lang='es_MX'):
         total = str(float(amount)).split('.')[0]

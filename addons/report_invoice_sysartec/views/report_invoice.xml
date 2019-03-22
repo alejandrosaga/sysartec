@@ -76,11 +76,11 @@
                                 </tr>
                                 <tr style="font-size:11px;" t-if="o.l10n_mx_edi_cfdi_uuid">
                                     <td><strong>Emission Date:</strong></td>
-                                    <td> <t  t-if="xml"><span t-if="xml.get('fecha', xml.get('Fecha', ''))" t-esc="xml.get('fecha', xml.get('Fecha', '')).replace('T', ' ')"/></t></td>
+                                    <td><span t-if="xml.get('fecha', xml.get('Fecha', ''))" t-esc="xml.get('fecha', xml.get('Fecha', '')).replace('T', ' ')"/></td>
                                 </tr>
                                 <tr style="font-size:11px;" t-if="o.l10n_mx_edi_cfdi_uuid">
                                     <td><strong>Payment method:</strong></td>
-                                    <td> <t  t-if="xml"><span t-if="xml.get('formaDePago', xml.get('MetodoPago'))" t-esc="xml.get('formaDePago', xml.get('MetodoPago'))"/></t></td>
+                                    <td><span t-if="xml.get('formaDePago', xml.get('MetodoPago'))" t-esc="xml.get('formaDePago', xml.get('MetodoPago'))"/></td>
                                 </tr>
                                 <tr style="font-size:11px;" t-if="o.l10n_mx_edi_cfdi_uuid">
                                     <td><strong>Payment form:</strong></td>
