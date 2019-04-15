@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_partner_mtm_inherit_form_sysartec" model="ir.ui.view">
+        <field name="name">res_partner.inherit.form.sysartec</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="replace">
+                <field name="user_id" invisible="1"/>
+                <field name="seller_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

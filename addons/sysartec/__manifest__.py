@@ -10,10 +10,13 @@
     'website': 'https://www.jarsa.com.mx',
     'license': 'LGPL-3',
     'depends': [
+        'contacts',
         'sale_management',
         'account_accountant',
     ],
     'data': [
+        'security/res_partner_security.xml',
+        'views/contacts_view.xml',
         'views/sale_order.xml',
     ],
 }
