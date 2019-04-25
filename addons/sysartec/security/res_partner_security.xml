@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="0">
-    <record id="sales_order_res_partner_employee" model="ir.rule">
+    <record id="sales_order_his_partners" model="ir.rule">
         <field name="name">Only show his partners</field>
         <field name="model_id" ref="base.model_res_partner"/>
         <field name="domain_force">[('seller_ids', 'in', user.ids)]</field>
@@ -10,7 +10,7 @@
         <field name="perm_unlink" eval="True"/>
         <field name="perm_read" eval="True"/>
     </record>
-    <record id="sales_order_res_partner_employee" model="ir.rule">
+    <record id="sales_order_his_documents" model="ir.rule">
         <field name="name">Only show his Documents</field>
         <field name="model_id" ref="sale.model_sale_order"/>
         <field name="domain_force">['|', ('user_id', '=', user.id), ('user_id', '=', False)]</field>
@@ -20,7 +20,7 @@
         <field name="perm_unlink" eval="True"/>
         <field name="perm_read" eval="True"/>
     </record>
-    <record id="sales_order_res_partner_employee" model="ir.rule">
+    <record id="sales_order_res_partner_admin" model="ir.rule">
         <field name="name">All partners</field>
         <field name="model_id" ref="base.model_res_partner"/>
         <field name="domain_force">[(1,'=',1)]</field>
