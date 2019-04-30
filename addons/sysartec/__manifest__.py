@@ -16,6 +16,7 @@
     ],
     'data': [
         'security/res_partner_security.xml',
+        'views/account_invoice.xml',
         'views/contacts_view.xml',
         'views/sale_order.xml',
     ],
