@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="account_invoice_custom_sysartec_view">
+        <field name="name">account.invoice_custom_sysartec_view.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='currency_id']" position="after">
+                <field name="type_expenses"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
