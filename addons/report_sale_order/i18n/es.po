@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#   * report_sale_order
+#	* report_sale_order
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-06 23:18+0000\n"
-"PO-Revision-Date: 2019-02-06 23:18+0000\n"
+"POT-Creation-Date: 2019-05-31 15:01+0000\n"
+"PO-Revision-Date: 2019-05-31 15:01+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,154 @@ msgstr ""
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
-msgid "<strong>Currency:</strong>"
-msgstr "<strong>Moneda:</strong>"
+msgid "<br/>\n"
+"                            <span>In response to your request, I allow you to send the corresponding quote.</span>"
+msgstr "<br/>\n"
+"                            <span>En atención a su solicitud, me permito enviarle la cotización correspondiente.</span>"
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
-msgid "List Price"
-msgstr "Precio de Lista"
+msgid "<br/><strong>Cancellation policy/ Reprogramming</strong>"
+msgstr "<br/><strong>Política de Cancelación / Reprogramación</strong>"
 
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<span>Dear </span>"
+msgstr "<span>Estimado(a) </span>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Precio Total</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Delivery time</strong>"
+msgstr "<strong>Tiempo de entrega</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descripción</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Payment conditions &amp;nbsp;&amp;nbsp;</strong>"
+msgstr "<strong>Condiciones de Pago &amp;nbsp;&amp;nbsp;</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Price list</strong>"
+msgstr "<strong>Precio de lista</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Prices are valid at</strong>"
+msgstr "<strong>Los precios son válidos al </strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Shipping costs</strong>"
+msgstr "<strong>Gastos de Envíos</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Special price</strong>"
+msgstr "<strong>Precio especial</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Taxes</strong>"
+msgstr "<strong>Impuestos</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Terms and conditions</strong>\n"
+"                    <br/>"
+msgstr "<strong>CONDICIONES Y TÉRMINOS</strong>\n"
+"                    <br/>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Amount with letters"
+msgstr "TOTAL CON LETRA"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "City:"
+msgstr "Ciudad"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Contact:"
+msgstr "Contacto"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Currency:"
+msgstr "Moneda"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Date:"
+msgstr "Fecha"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Delivery place:"
+msgstr "Lugar de entrega"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Email:"
+msgstr "Email"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "No. Quotation:"
+msgstr "No de Cotización"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Once the Purchase Order is placed, cancellations and / or refunds are not accepted"
+msgstr "Una vez colocada la Orden de Compra no se aceptan cancelaciones y/o devoluciones."
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Partner:"
+msgstr "Cliente"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Qty"
+msgstr "Cantidad"
+
+#. module: report_sale_order
+#: model:ir.model,name:report_sale_order.model_sale_order
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "State:"
+msgstr "Estado"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "The cost of shipping costs is determined according to the place of delivery."
+msgstr "El costo de gastos de envío se determina de acuerdo con el lugar de entrega."
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "Workplace:"
+msgstr "Puesto"

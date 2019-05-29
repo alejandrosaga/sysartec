@@ -13,6 +13,9 @@
         'contacts',
         'sale_management',
         'account_accountant',
+        'report_sale_order',
+        'report_purchase_order',
+        'report_invoice_sysartec',
     ],
     'data': [
         'security/res_partner_security.xml',
