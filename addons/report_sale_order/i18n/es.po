@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 15:01+0000\n"
-"PO-Revision-Date: 2019-05-31 15:01+0000\n"
+"POT-Creation-Date: 2019-06-03 20:24+0000\n"
+"PO-Revision-Date: 2019-06-03 20:24+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,11 @@ msgid "<br/>\n"
 "                            <span>In response to your request, I allow you to send the corresponding quote.</span>"
 msgstr "<br/>\n"
 "                            <span>En atención a su solicitud, me permito enviarle la cotización correspondiente.</span>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<br/><strong>* Terms and Conditions for Services: 50% Advance payment and 50% upon delivery.</strong><br/>"
+msgstr "<br/><strong>* Términos y Condiciones para Servicios: 50% de Anticipo y 50% a la entrega.</strong><br/>"
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
@@ -69,11 +74,6 @@ msgstr "<strong>Gastos de Envíos</strong>"
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
-msgid "<strong>Special price</strong>"
-msgstr "<strong>Precio especial</strong>"
-
-#. module: report_sale_order
-#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
 msgid "<strong>Subtotal</strong>"
 msgstr "<strong>Subtotal</strong>"
 
@@ -85,7 +85,7 @@ msgstr "<strong>Impuestos</strong>"
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
 msgid "<strong>Terms and conditions</strong>\n"
-"                    <br/>"
+"                        <br/>"
 msgstr "<strong>CONDICIONES Y TÉRMINOS</strong>\n"
 "                    <br/>"
 
@@ -93,6 +93,11 @@ msgstr "<strong>CONDICIONES Y TÉRMINOS</strong>\n"
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
 msgid "<strong>Total</strong>"
 msgstr "<strong>Total</strong>"
+
+#. module: report_sale_order
+#: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
+msgid "<strong>Unit price</strong>"
+msgstr "<strong>Precio unitario</strong>"
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
@@ -137,7 +142,7 @@ msgstr "No de Cotización"
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
 msgid "Once the Purchase Order is placed, cancellations and / or refunds are not accepted"
-msgstr "Una vez colocada la Orden de Compra no se aceptan cancelaciones y/o devoluciones."
+msgstr "Una vez colocada la Orden de Compra no se aceptan cancelaciones y/o devoluciones"
 
 #. module: report_sale_order
 #: model:ir.ui.view,arch_db:report_sale_order.report_saleorder_custom_sysartec
