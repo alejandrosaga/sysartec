@@ -16,8 +16,8 @@
                         <t t-set="tfd_original_string" t-value="o._get_l10n_mx_edi_cadena()"/>
                     </t>
                     <div class="row">
-                        <div class="col-xs-4" style="margin-top:-20px;">
-                            <img width="220" height="120" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/><br/><br/>
+                        <div class="col-xs-4" style="margin-top:-9px;">
+                            <img width="220" height="90" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/><br/>
                             <table class="col-xs-10">
                                 <tr>
                                     <th style="text-align:center; background-color:#2d3b4a; color:white;" colspan="2">Partner</th>
@@ -47,24 +47,26 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-xs-3 text-left">
-                            <div name="invoice_address">
-                                <strong><span t-esc="o.company_id.name"/><br/>
-                                <span t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.company_id.vat"/></strong><br/><br/>
-                                <strong>Fiscal Address:</strong><br/>
-                                <span t-field="o.company_id.street_name"/><br/>
-                                <span t-field="o.company_id.l10n_mx_edi_colony"/>
-                                <span t-field="o.company_id.l10n_mx_edi_locality"/>
-                                <span t-field="o.company_id.city"/>,
-                                <span t-field="o.company_id.state_id"/><br/>
-                                <span>ZIP</span>
-                                <span t-field="o.company_id.zip"/>
+                        <div class="col-xs-3 text-left" name="invoice_address" style="font-size:12px;">
+                            <div>
+                                <br/>
+                                <h4><strong>INVOICE</strong></h4>
                             </div>
+                            <strong><span t-esc="o.company_id.name"/><br/>
+                            <span t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.company_id.vat"/></strong><br/><br/>
+                            <strong>Fiscal Address:</strong><br/>
+                            <span t-field="o.company_id.street_name"/><br/>
+                            <span t-field="o.company_id.l10n_mx_edi_colony"/>
+                            <span t-field="o.company_id.l10n_mx_edi_locality"/>
+                            <span t-field="o.company_id.city"/>,
+                            <span t-field="o.company_id.state_id"/><br/>
+                            <span>ZIP</span>
+                            <span t-field="o.company_id.zip"/>
                         </div>
                         <div class="col-xs-5">
                             <table>
                                 <tr>
-                                    <th style="text-align:center; background-color:#2d3b4a; color:white;" colspan="2">INVOICE</th>
+                                    <th style="text-align:center; background-color:#2d3b4a; color:#2d3b4a;" colspan="2">.</th>
                                 </tr>
                                 <tr style="font-size:11px;">
                                     <td><strong>Folio:</strong></td>

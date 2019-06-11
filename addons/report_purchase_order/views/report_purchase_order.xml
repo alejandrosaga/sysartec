@@ -4,8 +4,14 @@
         <xpath expr="//div[hasclass('page')]" position="replace">
             <div class="page">
                 <div class="row">
-                    <div class="col-xs-6">
-                        <img width="250" height="120" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/><br/>
+                    <div class="col-xs-4">
+                        <img width="220" height="90" style="margin-bottom: -15px;" t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)"/>
+                    </div>
+                    <div class="col-xs-8 text-left">
+                        <br/><br/>
+                        <div style="margin-left:10px;">
+                            <h4><strong>PURCHASE ORDER</strong></h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -15,12 +21,19 @@
                                 <th style="text-align:center; background-color:#2d3b4a; color:white;" colspan="2">Partner data</th>
                             </tr>
                             <tr style="font-size:12px;">
-                                <td><strong>Name:</strong></td>
-                                <td><span t-field="o.partner_id"/></td>
+                                <div style="margin-left:15px;">
+                                    <td><div style="margin-left:15px;">
+                                        <strong>Name:</strong></div></td>
+                                    <td>
+                                        <span t-field="o.partner_id"/>
+                                    </td>
+                                </div>
                             </tr>
                             <tr style="font-size:12px;">
                                 <td>
-                                    <strong>Fiscal Address:</strong>
+                                    <div style="margin-left:15px;">
+                                        <strong>Fiscal Address:</strong>
+                                    </div>
                                 </td>
                                 <td>
                                     <span t-field="o.partner_id.street_name"/>
@@ -34,19 +47,22 @@
                                 </td>
                             </tr>
                             <tr style="font-size:12px;">
-                                <td><strong>VAT:</strong></td>
-                                <td><span t-esc="o.partner_id.vat"/></td>
+                                <td><div style="margin-left:15px;">
+                                    <strong>VAT:</strong></div></td>
+                                <td>
+                                    <span t-esc="o.partner_id.vat"/></td>
                                 <br/>
                             </tr>
                         </table>                        
                     </div>
-                    <div class="col-xs-6" style="margin-top:20px;">   
+                    <div class="col-xs-6" style="margin-top:-20px;"> 
+                        <br/><br/>
                         <table class="col-xs-10 pull-right" style="border: 1px solid; text-align:center;">
                             <tr>
-                                <th style="text-align:center;background-color:#2d3b4a; color:white;">Purchase Order</th>
+                                <th style="text-align:center;background-color:#2d3b4a; color:white;">Order number</th>
                             </tr>
                             <tr>
-                                <td style="font-size:12px;"><span t-esc="o.name"/></td>
+                                <td style="font-size:12px;"><div t-esc="o.name"/></td>
                             </tr>
                         </table>
                         <table class="col-xs-10 pull-right" style="border: 1px solid; text-align:center;">
@@ -75,28 +91,32 @@
                             </tr>
                             <tr height="86">
                                 <td style="font-size:12px;">
-                                    <strong><span t-esc="o.company_id.name"/><br/>
-                                    <span t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.company_id.vat"/></strong><br/>
-                                    <span t-field="o.company_id.street_name"/><br/>
-                                    <span t-field="o.company_id.l10n_mx_edi_colony"/>
-                                    <span t-field="o.company_id.l10n_mx_edi_locality"/>
-                                    <span t-field="o.company_id.city"/>,
-                                    <span t-field="o.company_id.state_id"/><br/>
-                                    <span>ZIP</span>
-                                    <span t-field="o.company_id.zip"/>
-                                </td>
-                                <td style="border: 0px; font-size:12px;">
-                                    <t t-if="o.customer_id">
-                                        <strong><span t-esc="o.customer_id.name"/><br/>
-                                        <span t-esc="o.customer_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.customer_id.vat"/></strong><br/>
-                                        <span t-field="o.customer_id.street_name"/><br/>
-                                        <span t-field="o.customer_id.l10n_mx_edi_colony"/>
-                                        <span t-field="o.customer_id.l10n_mx_edi_locality"/>
-                                        <span t-field="o.customer_id.city"/>,
-                                        <span t-field="o.customer_id.state_id"/><br/>
+                                    <div style="margin-left:15px;">
+                                        <strong><span t-esc="o.company_id.name"/><br/>
+                                        <span t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.company_id.vat"/></strong><br/>
+                                        <span t-field="o.company_id.street_name"/><br/>
+                                        <span t-field="o.company_id.l10n_mx_edi_colony"/>
+                                        <span t-field="o.company_id.l10n_mx_edi_locality"/>
+                                        <span t-field="o.company_id.city"/>,
+                                        <span t-field="o.company_id.state_id"/><br/>
                                         <span>ZIP</span>
-                                        <span t-field="o.customer_id.zip"/>
-                                    </t>
+                                        <span t-field="o.company_id.zip"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="margin-left:15px;">
+                                        <t t-if="o.customer_id">
+                                            <strong><span t-esc="o.customer_id.name"/><br/>
+                                            <span t-esc="o.customer_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.customer_id.vat"/></strong><br/>
+                                            <span t-field="o.customer_id.street_name"/><br/>
+                                            <span t-field="o.customer_id.l10n_mx_edi_colony"/>
+                                            <span t-field="o.customer_id.l10n_mx_edi_locality"/>
+                                            <span t-field="o.customer_id.city"/>,
+                                            <span t-field="o.customer_id.state_id"/><br/>
+                                            <span>ZIP</span>
+                                            <span t-field="o.customer_id.zip"/>
+                                        </t>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -108,7 +128,7 @@
                             </tr>
                             <tr height="86">
                                 <td style="text-align:left;font-size:12px;">
-                                    <div style="margin-left:20px;">
+                                    <div style="margin-left:15px;">
                                         <span t-if="o.dest_address_id" t-field="o.dest_address_id"
                                             t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
                                         <div t-if="not o.dest_address_id and o.picking_type_id and o.picking_type_id.warehouse_id">
@@ -123,21 +143,16 @@
                 </div>
                 <br/>
                 <table class="table table-condensed">
-                    <thead style="text-align:center; background-color:#2d3b4a; color:white;">
-                        <tr>
-                            <th>Code prod/serv</th>
-                            <th><strong>Description</strong></th>
-                            <th class="text-right"><strong>Qty</strong></th>
-                            <th class="text-right"><strong>Unit Price</strong></th>
-                            <th class="text-right"><strong>Amount</strong></th>
+                    <thead style="background-color:#2d3b4a; color:white;">
+                        <tr style="text-align:left;">
+                            <th style="text-align: left;"><strong>Product</strong></th>
+                            <th style="text-align: right;"><strong>Quantity</strong></th>
+                            <th style="text-align: right;"><strong>Unit Price</strong></th>
+                            <th style="text-align: right;"><strong>Amount</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr t-foreach="o.order_line" t-as="line">
-                            <td>
-                                <span t-if="line.product_id.l10n_mx_edi_code_sat_id.code" t-field="line.product_id.l10n_mx_edi_code_sat_id.code"/>
-                                <span t-if="not line.product_id.l10n_mx_edi_code_sat_id.code" t-field="line.product_id"/>
-                            </td>
                             <td>
                                 <span t-field="line.name"/>
                             </td>
@@ -156,19 +171,19 @@
                     </tbody>
                 </table>
                 <div class="row">
-                    <div class="col-xs-6">
-                        <table>
+                    <div class="col-xs-7">
+                        <table class="col-xs-12">
                             <tr>
-                                <th style="background-color:#2d3b4a; color:white;">Amount with letters</th>
+                                <th style="text-align:center; background-color:#2d3b4a; color:white;">Amount with letters</th>
                             </tr>
                             <tr>
                                 <td>
-                                    <span t-esc="o._amount_to_text(o.amount_total, o.currency_id.name, o.partner_id.lang)"/>
+                                    <span style="font-size: 12px;" t-esc="o._amount_to_text(o.amount_total, o.currency_id.name, o.partner_id.lang)"/>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-5 pull-right">
+                    <div class="col-xs-4 pull-right">
                         <table style="border: 1px solid;" class="table table-condensed">
                             <tr>
                                 <td style="border-top: 1px solid;border-right: 1px solid;"><strong>Subtotal</strong></td>

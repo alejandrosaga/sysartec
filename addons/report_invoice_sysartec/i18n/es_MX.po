@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 22:01+0000\n"
-"PO-Revision-Date: 2019-02-21 22:01+0000\n"
+"POT-Creation-Date: 2019-06-10 19:11+0000\n"
+"PO-Revision-Date: 2019-06-10 19:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -50,14 +50,14 @@ msgstr "<br/>\n"
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<br/>\n"
-"                                <span>ZIP</span>"
+"                            <span>ZIP</span>"
 msgstr "<br/>\n"
 "                                <span>C.P.</span>"
 
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<br/><br/>\n"
-"                                <strong>Fiscal Address:</strong><br/>"
+"                            <strong>Fiscal Address:</strong><br/>"
 msgstr "<br/><br/>\n"
 "                                <strong>Dirección Fiscal:</strong><br/>"
 
@@ -147,6 +147,11 @@ msgstr "<strong>FOLIO:</strong>"
 
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+msgid "<strong>INVOICE</strong>"
+msgstr "<strong>FACTURA</strong>"
+
+#. module: report_invoice_sysartec
+#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Name:</strong>"
 msgstr "<strong>NOMBRE:</strong>"
 
@@ -212,18 +217,13 @@ msgstr "Desc.(%)"
 
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
-msgid "INVOICE"
-msgstr "FACTURA"
-
-#. module: report_invoice_sysartec
-#: model:ir.model,name:report_invoice_sysartec.model_account_invoice
-msgid "Invoice"
-msgstr "FACTURA"
+msgid "NUMBER"
+msgstr "NUMERO"
 
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Partner"
-msgstr "CLIENTE"
+msgstr "Empresa"
 
 #. module: report_invoice_sysartec
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
@@ -239,4 +239,3 @@ msgstr "Precio de Unidad"
 #: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Unit code"
 msgstr "Código unidad"
-
