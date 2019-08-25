@@ -6,8 +6,8 @@
 from odoo import models
 
 
-class ProcurementRule(models.Model):
-    _inherit = 'procurement.rule'
+class StockRule(models.Model):
+    _inherit = 'stock.rule'
 
     def _make_po_select_supplier(self, values, suppliers):
         """Method overridden from odoo to return the propper supplier info
