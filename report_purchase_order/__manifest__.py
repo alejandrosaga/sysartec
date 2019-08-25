@@ -1,5 +1,5 @@
 # Copyright 2018, Jarsa Sistemas, S.A. de C.V.
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
     'name': 'Report: Purchase Order',
@@ -8,9 +8,11 @@
     'category': 'Purchase',
     'author': 'Jarsa Sistemas',
     'website': 'https://www.jarsa.com.mx',
-    'license': 'AGPL-3',
+    'license': 'LGPL-3',
     'depends': [
-        'purchase',
+        'purchase_stock',
+        'base_address_extended',
+        'l10n_mx_edi',
     ],
     'data': [
         'views/report_purchase_order.xml',
