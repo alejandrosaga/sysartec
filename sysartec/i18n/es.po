@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sysartec
-#: model:ir.model.fields,field_description:sysartec.field_sale_order_commitment_date
+#: model:ir.model.fields,field_description:sysartec.field_sale_order_commitment_date_note
 msgid "Commitmnet Date"
 msgstr "Fecha de Compromiso"
 

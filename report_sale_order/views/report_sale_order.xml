@@ -176,7 +176,7 @@
                         <table class="col-xs-12" style="font-size:11px;">
                             <tr>
                                 <td><strong>Delivery time</strong></td>
-                                <td><strong><span t-esc="doc.commitment_date"/></strong></td>
+                                <td><strong><span t-esc="doc.commitment_date_note"/></strong></td>
                             </tr>
                             <tr>
                                 <td><strong>Payment conditions &amp;nbsp;&amp;nbsp;</strong></td>

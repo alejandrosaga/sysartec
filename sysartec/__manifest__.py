@@ -16,6 +16,7 @@
         'report_sale_order',
         'report_purchase_order',
         'report_invoice_sysartec',
+        'sale_purchase_vendor',
     ],
     'data': [
         'security/res_partner_security.xml',
