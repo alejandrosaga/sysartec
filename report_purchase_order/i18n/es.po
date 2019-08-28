@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e\n"
+"Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-10 19:15+0000\n"
-"PO-Revision-Date: 2019-06-10 19:15+0000\n"
+"POT-Creation-Date: 2019-08-28 20:54+0000\n"
+"PO-Revision-Date: 2019-08-28 20:54+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,127 +16,127 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<br/>\n"
 "                                            <span>ZIP</span>"
 msgstr "<br/>\n"
 "                                            <span>C.P.</span>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<br/>\n"
 "                                        <span>ZIP</span>"
 msgstr "<br/>\n"
 "                                        <span>C.P.</span>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<br/>\n"
 "                                    <span>ZIP</span>"
 msgstr "<br/>\n"
 "                                    <span>C.P.</span>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<span>Observations:</span>"
 msgstr "<span>Observaciones:</span>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Amount</strong>"
 msgstr "<strong>Precio Total</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Fiscal Address:</strong>"
 msgstr "<strong>DOMICILIO FISCAL:</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Name:</strong>"
 msgstr "<strong>NOMBRE:</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>PURCHASE ORDER</strong>"
 msgstr "<strong>ORDEN DE COMPRA</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Product</strong>"
 msgstr "<strong>Producto</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Quantity</strong>"
 msgstr "<strong>Cantidad</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Subtotal</strong>"
 msgstr "<strong>Subtotal</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
-msgid "<strong>Taxes</strong>"
-msgstr "<strong>Impuestos</strong>"
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+msgid "&amp;nbsp; <strong>Taxes</strong>"
+msgstr "&amp;nbsp; <strong>Impuestos</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Total</strong>"
 msgstr "<strong>Total</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>Unit Price</strong>"
 msgstr "<strong>Precio de Unidad</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "<strong>VAT:</strong>"
 msgstr "<strong>RFC:</strong>"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Amount with letters"
 msgstr "TOTAL CON LETRA"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Currency"
 msgstr "Moneda"
 
 #. module: report_purchase_order
-#: model:ir.model.fields,field_description:report_purchase_order.field_purchase_order_customer_id
+#: model_terms:ir.model.fields,field_description:report_purchase_order.field_purchase_order_customer_id
 msgid "Customer"
 msgstr "Cliente"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Emission date"
 msgstr "Fecha de emisión"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Invoicing address"
 msgstr "Datos de facturación"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Order number"
 msgstr "Numero de orden"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Partner data"
 msgstr "Datos del proveedor"
 
 #. module: report_purchase_order
-#: model:ir.model,name:report_purchase_order.model_purchase_order
+#: model_terms:ir.model,name:report_purchase_order.model_purchase_order
 msgid "Purchase Order"
 msgstr "Pedido de compra"
 
 #. module: report_purchase_order
-#: model:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_purchase_order.report_purchaseorder_custom_sysartec
 msgid "Shipping address"
 msgstr "Dirección de envío"
