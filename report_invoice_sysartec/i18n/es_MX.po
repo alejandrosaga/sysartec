@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e\n"
+"Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 14:52+0000\n"
-"PO-Revision-Date: 2019-07-19 14:52+0000\n"
+"POT-Creation-Date: 2019-08-28 17:24+0000\n"
+"PO-Revision-Date: 2019-08-28 17:24+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,226 +16,227 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "&amp;nbsp;<span>on</span>"
 msgstr "&amp;nbsp;<span>en</span>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "019025270013 &amp;nbsp; &amp;nbsp;"
-msgstr "019025270013 &amp;nbsp; &amp;nbsp;"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "019025270021"
-msgstr "019025270021"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "0696804388"
-msgstr "0696804388"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "818266041"
-msgstr "818266041"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<br/>\n"
-"                                        <span>ZIP</span>"
+"                                    <span>ZIP</span>"
 msgstr "<br/>\n"
-"                                        <span>C.P.</span>"
+"                                    <span>C.P.</span>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<br/>\n"
-"                            <span>ZIP</span>"
+"                        <span>ZIP</span>"
 msgstr "<br/>\n"
-"                                <span>C.P.</span>"
+"                        <span>C.P.</span>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<br/><br/>\n"
-"                            <strong>Fiscal Address:</strong><br/>"
+"                        <strong>Fiscal Address:</strong><br/>"
 msgstr "<br/><br/>\n"
-"                                <strong>Dirección Fiscal:</strong><br/>"
+"                        <strong>Dirección Fiscal:</strong><br/>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<span>\n"
-"                                This fiscal invoice will generate moraturiums month interest of 3% starting the next day of the expiration date. In fundament in the 380 articles of the federal civil code, the delivery of the product  that details in this invoice, domain reservation is made, the obtaining is conditioned  of the property until its cover the total amount of the invoice.\n"
-"                            </span>"
+"                            This fiscal invoice will generate moraturiums month interest of 3% starting the next day of the expiration date. In fundament in the 380 articles of the federal civil code, the delivery of the product  that details in this invoice, domain reservation is made, the obtaining is conditioned  of the property until its cover the total amount of the invoice.\n"
+"                        </span>"
 msgstr "<span>\n"
-"                                Esta factura fiscal generara intereses moratorios del 3% mensual a partir del día siguiente de la fecha de vencimiento. Con fundamento en los artículos 380 del Código de Comercio y 2312 del Código Civil Federal, la entrega del producto que se detalla en la presente factura; se hace bajo reserva de dominio, quedando condicionada la obtención de la propiedad del producto, hasta que sea cubierto el monto total de esta factura. \n"
-"                            </span>"
+"                            Esta factura fiscal generara intereses moratorios del 3% mensual a partir del día siguiente de la fecha de vencimiento. Con fundamento en los artículos 380 del Código de Comercio y 2312 del Código Civil Federal, la entrega del producto que se detalla en la presente factura; se hace bajo reserva de dominio, quedando condicionada la obtención de la propiedad del producto, hasta que sea cubierto el monto total de esta factura. \n"
+"                        </span>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong style=\"font-size:12px;\">Digital stamp SAT</strong>"
-msgstr "<strong style=\"font-size:12px;\">SELLO DEL SAT</strong>"
+msgstr "<strong style=\"font-size:12px;\">SELLO DIGITAL DEL SAT</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong style=\"font-size:12px;\">Digital stamp of the emitter</strong><br/>"
 msgstr "<strong style=\"font-size:12px;\">SELLO DIGITAL DEL EMISOR</strong><br/>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong style=\"font-size:12px;\">Original chain complement of digital certification SAT</strong>"
 msgstr "<strong style=\"font-size:12px;\">CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DEL SAT</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong><span>BANK ACCOUNTS</span></strong>"
 msgstr "<strong><span>CUENTAS BANCARIAS</span></strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>BANORTE Dolares: </strong>"
 msgstr "<strong>BANORTE Dólares: </strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>BANORTE Pesos: </strong>"
-msgstr "<strong>BANORTE Pesos: </strong>"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>BANREGIO Dolares: </strong>"
 msgstr "<strong>BANREGIO Dólares: </strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>BANREGIO Pesos: </strong>"
-msgstr "<strong>BANREGIO Pesos: </strong>"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>CFDI Use:</strong>"
 msgstr "<strong>USO DE CFDI:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>CREDIT NOTE</strong>"
 msgstr "<strong>NOTA DE CRÉDITO</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Date due:</strong>"
 msgstr "<strong>FECHA DE VENCIMIENTO:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Emission Date:</strong>"
 msgstr "<strong>FECHA Y HORA DE EMISIÓN:</strong>"
 
+
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Fiscal Address:</strong>"
 msgstr "<strong>DOMICILIO FISCAL:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Fiscal Folio:</strong>"
 msgstr "<strong>FOLIO FISCAL:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Fiscal Regimen:</strong>"
 msgstr "<strong>REGIMEN FISCAL:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Folio:</strong>"
 msgstr "<strong>FOLIO:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>INVOICE</strong>"
 msgstr "<strong>FACTURA</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Name:</strong>"
 msgstr "<strong>NOMBRE:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Payment conditions: &amp;nbsp;</strong>"
 msgstr "<strong>CONDICIONES DE PAGO: &amp;nbsp;</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Payment form:</strong>"
 msgstr "<strong>FORMA DE PAGO:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Payment method:</strong>"
 msgstr "<strong>METODO DE PAGO:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Sale Order:</strong>"
 msgstr "<strong>ORDEN DE VENTA:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Subtotal</strong>"
-msgstr "<strong>Subtotal</strong>"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>Total</strong>"
-msgstr "<strong>Total</strong>"
+msgstr ""
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "<strong>VAT:</strong>"
 msgstr "<strong>RFC:</strong>"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Amount"
 msgstr "Importe"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Amount with letters"
 msgstr "TOTAL CON LETRA"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Code prod/serv"
 msgstr "Clave prod/serv"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Description"
 msgstr "Descripción"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Disc.(%)"
 msgstr "Desc.(%)"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Partner"
 msgstr "Empresa"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Quantity"
 msgstr "Cantidad"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Unit Price"
-msgstr "Precio de Unidad"
+msgstr "Precio unitario"
 
 #. module: report_invoice_sysartec
-#: model:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
+#: model_terms:ir.ui.view,arch_db:report_invoice_sysartec.report_invoice_custom_sysartec
 msgid "Unit code"
 msgstr "Código unidad"
