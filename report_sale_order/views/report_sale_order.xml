@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <odoo>
     <template id="external_layout_standard_sysartec" inherit_id="web.external_layout_standard">
-        <xpath expr="//div[hasclass('header')]" position="replace"/>
         <xpath expr="//div[hasclass('article')]" position="replace">
             <div class="article o_report_layout_standard"  t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
                 <t t-raw="0"/>
             </div>
         </xpath>
-        <xpath expr="//div[hasclass('footer')]" position="replace"/>
     </template>
     <template id="report_saleorder_custom_sysartec" inherit_id="sale.report_saleorder_document">
         <xpath expr="//div[@class='page']" position="replace">
-            <div class="page">
+            <div class="page">                
+                <p id="fiscal_position_remark"/>
                 <div class="row">
                     <div class="col-4" >
                         <img style="position: fixed;"  width="200" height="90" t-if="doc.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(doc.company_id.logo)"/>
